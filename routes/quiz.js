@@ -27,31 +27,31 @@ const controller = require('../controllers/quiz.js');
  *             properties:
  *               question:
  *                 type: string
- *                 example: Кто выиграл Чемпионат Азербайджана в сезоне 2025/2026?
+ *                 example: ""
  *               answer1:
  *                 type: string
- *                 example: Нефтчи
+ *                 example: ""
  *               answer2:
  *                 type: string
- *                 example: Карабах
+ *                 example: ""
  *               answer3:
  *                 type: string
- *                 example: Сабах
+ *                 example: ""
  *               answer4:
  *                 type: string
- *                 example: Габала
+ *                 example: ""
  *               correctIndex:
  *                 type: integer
- *                 example: 3
+ *                 example: ""
  *               explanation:
  *                 type: string
- *                 example: Сабах выиграл чемпионат Азербайджана в сезоне 2025/2026, впервые в своей истории
+ *                 example: ""
  *               difficulty:
  *                 type: string
- *                 example: Сложно
+ *                 example: ""
  *               imgUrl:
  *                 type: string
- *                 example: https://c0.wallpaperflare.com/preview/334/475/739/canada-montreal-paper-pencil.jpg
+ *                 example: ""
  *     responses:
  *       200:
  *         description: Вопрос добавлен
@@ -78,7 +78,7 @@ const controller = require('../controllers/quiz.js');
  *         schema:
  *           type: integer
  *         description: ID вопроса
- *         example: 1
+ *         example: ""
  *
  *     requestBody:
  *       required: true
@@ -86,34 +86,43 @@ const controller = require('../controllers/quiz.js');
  *         application/x-www-form-urlencoded:
  *           schema:
  *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
  *             properties:
  *               question:
  *                 type: string
- *                 example: Кто выиграл Чемпионат Азербайджана в сезоне 2025/2026?
+ *                 example: ""
  *               answer1:
  *                 type: string
- *                 example: Нефтчи
+ *                 example: ""
  *               answer2:
  *                 type: string
- *                 example: Карабах
+ *                 example: ""
  *               answer3:
  *                 type: string
- *                 example: Сабах
+ *                 example: ""
  *               answer4:
  *                 type: string
- *                 example: Габала
+ *                 example: ""
  *               correctIndex:
  *                 type: integer
- *                 example: 3
+ *                 example: ""
  *               explanation:
  *                 type: string
- *                 example: Сабах выиграл чемпионат Азербайджана в сезоне 2025/2026, впервые в своей истории
+ *                 example: ""
  *               difficulty:
  *                 type: string
- *                 example: Сложно
+ *                 example: ""
  *               imgUrl:
  *                 type: string
- *                 example: https://c0.wallpaperflare.com/preview/334/475/739/canada-montreal-paper-pencil.jpg
+ *                 example: ""
  *     responses:
  *       200:
  *         description: Вопрос успешно обновлён
@@ -130,7 +139,7 @@ const controller = require('../controllers/quiz.js');
  *         schema:
  *           type: integer
  *         description: ID вопроса
- *         example: 1
+ *         example: ""
  *     responses:
  *       200:
  *         description: Вопрос успешно удалён
@@ -158,31 +167,31 @@ const controller = require('../controllers/quiz.js');
  *             properties:
  *               question:
  *                 type: string
- *                 example: Кто выиграл ЧМ 2018?
+ *                 example: ""
  *               answer1:
  *                 type: string
- *                 example: Франция
+ *                 example: ""
  *               answer2:
  *                 type: string
- *                 example: Германия
+ *                 example: ""
  *               answer3:
  *                 type: string
- *                 example: Бразилия
+ *                 example: ""
  *               answer4:
  *                 type: string
- *                 example: Аргентина
+ *                 example: ""
  *               correctIndex:
  *                 type: integer
- *                 example: 1
+ *                 example: ""
  *               explanation:
  *                 type: string
- *                 example: Франция выиграла финал против Хорватии
+ *                 example: ""
  *               difficulty:
  *                 type: string
- *                 example: Легко
+ *                 example: ""
  *               imgUrl:
  *                 type: string
- *                 example: https://c0.wallpaperflare.com/preview/334/475/739/canada-montreal-paper-pencil.jpg
+ *                 example: ""
  *     responses:
  *       200:
  *         description: Вопрос добавлен
@@ -209,7 +218,7 @@ const controller = require('../controllers/quiz.js');
  *         schema:
  *           type: integer
  *         description: ID вопроса
- *         example: 1
+ *         example: ""
  *
  *     requestBody:
  *       required: true
@@ -217,34 +226,43 @@ const controller = require('../controllers/quiz.js');
  *         application/x-www-form-urlencoded:
  *           schema:
  *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
  *             properties:
  *               question:
  *                 type: string
- *                 example: Кто выиграл ЧМ 2018?
+ *                 example: ""
  *               answer1:
  *                 type: string
- *                 example: Франция
+ *                 example: ""
  *               answer2:
  *                 type: string
- *                 example: Германия
+ *                 example: ""
  *               answer3:
  *                 type: string
- *                 example: Бразилия
+ *                 example: ""
  *               answer4:
  *                 type: string
- *                 example: Аргентина
+ *                 example: ""
  *               correctIndex:
  *                 type: integer
- *                 example: 1
+ *                 example: ""
  *               explanation:
  *                 type: string
- *                 example: Франция выиграла финал против Хорватии
+ *                 example: ""
  *               difficulty:
  *                 type: string
- *                 example: Легко
+ *                 example: ""
  *               imgUrl:
  *                 type: string
- *                 example: https://c0.wallpaperflare.com/preview/334/475/739/canada-montreal-paper-pencil.jpg
+ *                 example: ""
  *     responses:
  *       200:
  *         description: Вопрос успешно обновлён
@@ -261,10 +279,62 @@ const controller = require('../controllers/quiz.js');
  *         schema:
  *           type: integer
  *         description: ID вопроса
- *         example: 1
+ *         example: ""
  *     responses:
  *       200:
  *         description: Вопрос успешно удалён
+ * 
+ * /api/quiz/guess-club-add:
+ *   post:
+ *     summary: Добавить вопрос - Угадай клуб игрока
+ *     tags:
+ *       - Угадай клуб игрока
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/x-www-form-urlencoded:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
+ *             properties:
+ *               question:
+ *                 type: string
+ *                 example: ""
+ *               answer1:
+ *                 type: string
+ *                 example: ""
+ *               answer2:
+ *                 type: string
+ *                 example: ""
+ *               answer3:
+ *                 type: string
+ *                 example: ""
+ *               answer4:
+ *                 type: string
+ *                 example: ""
+ *               correctIndex:
+ *                 type: integer
+ *                 example: ""
+ *               explanation:
+ *                 type: string
+ *                 example: ""
+ *               difficulty:
+ *                 type: string
+ *                 example: ""
+ *               imgUrl:
+ *                 type: string
+ *                 example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос добавлен
  * 
  * /api/quiz/guess-club:
  *   get:
@@ -275,6 +345,137 @@ const controller = require('../controllers/quiz.js');
  *       200:
  *         description: Успешный запрос
  * 
+ * /api/quiz/guess-club-edit/{id}:
+ *   put:
+ *     summary: Редактировать вопрос - Угадай клуб игрока
+ *     tags:
+ *       - Угадай клуб игрока
+ *
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID вопроса
+ *         example: ""
+ *
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/x-www-form-urlencoded:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
+ *             properties:
+ *               question:
+ *                 type: string
+ *                 example: ""
+ *               answer1:
+ *                 type: string
+ *                 example: ""
+ *               answer2:
+ *                 type: string
+ *                 example: ""
+ *               answer3:
+ *                 type: string
+ *                 example: ""
+ *               answer4:
+ *                 type: string
+ *                 example: ""
+ *               correctIndex:
+ *                 type: integer
+ *                 example: ""
+ *               explanation:
+ *                 type: string
+ *                 example: ""
+ *               difficulty:
+ *                 type: string
+ *                 example: ""
+ *               imgUrl:
+ *                 type: string
+ *                 example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос успешно обновлён
+ * 
+ * /api/quiz/guess-club-delete/{id}:
+ *   delete:
+ *     summary: Удалить вопрос - Угадай клуб игрока
+ *     tags:
+ *       - Угадай клуб игрока
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID вопроса
+ *         example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос успешно удалён
+ * 
+ * /api/quiz/guess-national-team-add:
+ *   post:
+ *     summary: Добавить вопрос - Угадай сборную игрока
+ *     tags:
+ *       - Угадай сборную игрока
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/x-www-form-urlencoded:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
+ *             properties:
+ *               question:
+ *                 type: string
+ *                 example: ""
+ *               answer1:
+ *                 type: string
+ *                 example: ""
+ *               answer2:
+ *                 type: string
+ *                 example: ""
+ *               answer3:
+ *                 type: string
+ *                 example: ""
+ *               answer4:
+ *                 type: string
+ *                 example: ""
+ *               correctIndex:
+ *                 type: integer
+ *                 example: ""
+ *               explanation:
+ *                 type: string
+ *                 example: ""
+ *               difficulty:
+ *                 type: string
+ *                 example: ""
+ *               imgUrl:
+ *                 type: string
+ *                 example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос добавлен
+ * 
  * /api/quiz/guess-national-team:
  *   get:
  *     summary: Получить список вопросов - Угадай сборную игрока
@@ -284,14 +485,224 @@ const controller = require('../controllers/quiz.js');
  *       200:
  *         description: Успешный запрос
  * 
+ * /api/quiz/guess-national-team-edit/{id}:
+ *   put:
+ *     summary: Редактировать вопрос - Угадай сборную игрока
+ *     tags:
+ *       - Угадай сборную игрока
+ *
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID вопроса
+ *         example: ""
+ *
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/x-www-form-urlencoded:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
+ *             properties:
+ *               question:
+ *                 type: string
+ *                 example: ""
+ *               answer1:
+ *                 type: string
+ *                 example: ""
+ *               answer2:
+ *                 type: string
+ *                 example: ""
+ *               answer3:
+ *                 type: string
+ *                 example: ""
+ *               answer4:
+ *                 type: string
+ *                 example: ""
+ *               correctIndex:
+ *                 type: integer
+ *                 example: ""
+ *               explanation:
+ *                 type: string
+ *                 example: ""
+ *               difficulty:
+ *                 type: string
+ *                 example: ""
+ *               imgUrl:
+ *                 type: string
+ *                 example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос успешно обновлён
+ * 
+ * /api/quiz/guess-national-team-delete/{id}:
+ *   delete:
+ *     summary: Удалить вопрос - Угадай сборную игрока
+ *     tags:
+ *       - Угадай сборную игрока
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID вопроса
+ *         example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос успешно удалён
+ * 
+ * /api/quiz/guess-stadium-add:
+ *   post:
+ *     summary: Добавить вопрос - Угадай стадион клуба
+ *     tags:
+ *       - Угадай стадион клуба
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/x-www-form-urlencoded:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
+ *             properties:
+ *               question:
+ *                 type: string
+ *                 example: ""
+ *               answer1:
+ *                 type: string
+ *                 example: ""
+ *               answer2:
+ *                 type: string
+ *                 example: ""
+ *               answer3:
+ *                 type: string
+ *                 example: ""
+ *               answer4:
+ *                 type: string
+ *                 example: ""
+ *               correctIndex:
+ *                 type: integer
+ *                 example: ""
+ *               explanation:
+ *                 type: string
+ *                 example: ""
+ *               difficulty:
+ *                 type: string
+ *                 example: ""
+ *               imgUrl:
+ *                 type: string
+ *                 example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос добавлен
+ * 
  * /api/quiz/guess-stadium:
  *   get:
- *     summary: Получить список вопросов - Угадай стадион
+ *     summary: Получить список вопросов - Угадай стадион клуба
  *     tags:
- *       - Угадай стадион
+ *       - Угадай стадион клуба
  *     responses:
  *       200:
  *         description: Успешный запрос
+ * 
+ * /api/quiz/guess-stadium-edit/{id}:
+ *   put:
+ *     summary: Редактировать вопрос - Угадай стадион клуба
+ *     tags:
+ *       - Угадай стадион клуба
+ *
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID вопроса
+ *         example: ""
+ *
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/x-www-form-urlencoded:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - question
+ *               - answer1
+ *               - answer2
+ *               - answer3
+ *               - answer4
+ *               - correctIndex
+ *               - explanation
+ *               - difficulty
+ *             properties:
+ *               question:
+ *                 type: string
+ *                 example: ""
+ *               answer1:
+ *                 type: string
+ *                 example: ""
+ *               answer2:
+ *                 type: string
+ *                 example: ""
+ *               answer3:
+ *                 type: string
+ *                 example: ""
+ *               answer4:
+ *                 type: string
+ *                 example: ""
+ *               correctIndex:
+ *                 type: integer
+ *                 example: ""
+ *               explanation:
+ *                 type: string
+ *                 example: ""
+ *               difficulty:
+ *                 type: string
+ *                 example: ""
+ *               imgUrl:
+ *                 type: string
+ *                 example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос успешно обновлён
+ * 
+ * /api/quiz/guess-stadium-delete/{id}:
+ *   delete:
+ *     summary: Удалить вопрос - Угадай стадион клуба
+ *     tags:
+ *       - Угадай стадион клуба
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID вопроса
+ *         example: ""
+ *     responses:
+ *       200:
+ *         description: Вопрос успешно удалён
  *
  */
 
@@ -305,9 +716,19 @@ router.get('/football-quiz-wc', controller.getFootballQuizWC);
 router.put('/football-quiz-wc-edit/:id', controller.editFootballQuizWC);
 router.delete('/football-quiz-wc-delete/:id', controller.deleteFootballQuizWC);
 
-
+router.post('/guess-club-add', controller.addGuessClub);
 router.get('/guess-club', controller.getGuessClub);
+router.put('/guess-club-edit/:id', controller.editGuessClub);
+router.delete('/guess-club-delete/:id', controller.deleteGuessClub);
+
+router.post('/guess-national-team-add', controller.addGuessNationalTeam);
 router.get('/guess-national-team', controller.getGuessNationalTeam);
+router.put('/guess-national-team-edit/:id', controller.editGuessNationalTeam);
+router.delete('/guess-national-team-delete/:id', controller.deleteGuessNationalTeam);
+
+router.get('/guess-stadium-add', controller.addGuessStadium);
 router.get('/guess-stadium', controller.getGuessStadium);
+router.put('/guess-stadium-edit/:id', controller.editGuessStadium);
+router.delete('/guess-stadium-delete/:id', controller.deleteGuessStadium);
 
 module.exports = router;
